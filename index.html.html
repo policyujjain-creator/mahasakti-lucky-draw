@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mahasakti Lucky Draw | Driving Licence & ITR Services</title>
+<style>
+:root{--red:#a80818;--red2:#d51e2b;--gold:#ffd76a;--cream:#fff8e9;--ink:#321017;--green:#18794e}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;background:var(--cream);color:var(--ink);line-height:1.55}
+header{background:linear-gradient(120deg,#79000e,var(--red),#d52c25);color:white;padding:16px 5%;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;border-bottom:4px solid var(--gold)}
+.brand{font-size:1.2rem;font-weight:900;letter-spacing:.3px}.brand span{color:var(--gold)}nav{display:flex;gap:16px;flex-wrap:wrap}nav a{color:white;text-decoration:none;font-weight:700;font-size:.92rem}
+.hero{padding:54px 5% 48px;background:radial-gradient(circle at 85% 20%,#ffdc70 0,transparent 23%),linear-gradient(135deg,#970817,#cf1f2d 65%,#78000d);color:white;text-align:center}
+.pill{display:inline-block;background:var(--gold);color:#65000b;border-radius:99px;padding:6px 14px;font-weight:800;font-size:.85rem}
+h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.13;margin:18px auto;max-width:850px}h1 span{color:var(--gold)}.hero p{max-width:700px;margin:0 auto 22px;font-size:1.1rem}
+.btn{display:inline-block;background:var(--gold);color:#61000b;padding:12px 20px;border-radius:9px;text-decoration:none;font-weight:900;border:0;cursor:pointer}.btn.secondary{background:white;color:var(--red)}
+section{padding:38px 5%;max-width:1180px;margin:auto}.section-title{text-align:center;margin:0 0 8px;font-size:clamp(1.6rem,4vw,2.3rem)}.sub{text-align:center;color:#6e4b4d;margin:0 auto 25px;max-width:720px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}.card{background:white;border:1px solid #f0d8b2;border-radius:16px;padding:22px;box-shadow:0 6px 22px #4b11100c}.emoji{font-size:2.1rem}.card h3{margin:8px 0;color:var(--red)}.card p{margin:0 0 14px;color:#60484a}.small-btn{display:inline-block;color:var(--red);font-weight:800;text-decoration:none;border-bottom:1px solid var(--red)}
+.steps .card{text-align:center}.number{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--red);color:white;font-weight:900}
+.form-wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:24px;align-items:start}.notice{background:#fff0c9;border:1px solid #f0d17e;padding:16px;border-radius:12px;font-size:.93rem}.form-card{background:white;padding:24px;border-radius:16px;box-shadow:0 6px 22px #4b11100c}label{display:block;font-weight:700;margin:12px 0 5px}input,select,textarea{width:100%;padding:12px;border:1px solid #dbc8c8;border-radius:8px;font:inherit;background:#fffdf9}input:focus,select:focus,textarea:focus{outline:2px solid #e9b7a0}form .btn{width:100%;margin-top:16px;font-size:1rem}.status{margin-top:12px;font-weight:700}
+footer{background:#35030a;color:#fff2d7;padding:28px 5%;text-align:center}footer p{margin:6px}.muted{font-size:.86rem;color:#e4c7c7}.wa{position:fixed;bottom:16px;right:16px;background:#168b54;color:white;padding:12px 16px;border-radius:999px;text-decoration:none;font-weight:900;box-shadow:0 5px 18px #0003}
+@media(max-width:700px){.form-wrap{grid-template-columns:1fr}header{justify-content:center;text-align:center}nav{justify-content:center}.hero{padding-top:38px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">🎉 <span>MAHASAKTI</span> LUCKY DRAW</div>
+  <nav><a href="#services">हमारी सर्विस</a><a href="#how">कैसे काम करता है</a><a href="#register">रजिस्ट्रेशन</a></nav>
+</header>
+<main>
+<section class="hero">
+  <span class="pill">रजिस्ट्रेशन बिल्कुल फ्री</span>
+  <h1>अपनी सर्विस कराएँ,<br><span>ऑफर्स की जानकारी पाएँ!</span></h1>
+  <p>Driving Licence और ITR Filing से जुड़ी सहायता के लिए Mahasakti से संपर्क करें। किसी भी प्रमोशनल ड्रॉ की एंट्री नियमों और पात्रता की पुष्टि के अधीन होगी।</p>
+  <a class="btn" href="#register">फ्री रजिस्ट्रेशन करें</a>
+  <a class="btn secondary" href="#services">सर्विस देखें</a>
+</section>
+<section id="services">
+  <h2 class="section-title">हमारी सर्विस</h2><p class="sub">अपनी ज़रूरत चुनें और जानकारी के लिए संपर्क करें। सर्विस फीस, दस्तावेज़ और पात्रता पहले से स्पष्ट की जाएगी।</p>
+  <div class="grid">
+    <article class="card"><div class="emoji">🚘</div><h3>Driving Licence सहायता</h3><p>लाइसेंस से जुड़ी प्रक्रिया, आवश्यक दस्तावेज़ और लागू सरकारी शुल्क की जानकारी पाएँ।</p><a class="small-btn" href="#register" onclick="chooseService('Driving Licence')">जानकारी लें →</a></article>
+    <article class="card"><div class="emoji">📄</div><h3>ITR Filing सहायता</h3><p>इनकम टैक्स रिटर्न फाइलिंग के लिए आवश्यक जानकारी और दस्तावेज़ों की सूची पाएँ।</p><a class="small-btn" href="#register" onclick="chooseService('ITR Filing')">जानकारी लें →</a></article>
+    <article class="card"><div class="emoji">🎁</div><h3>प्रमोशनल ऑफर्स</h3><p>किसी भी ऑफर या ड्रॉ की शर्तें, पात्रता, तारीख और इनाम की जानकारी प्रकाशित होने पर यहाँ देखें।</p><a class="small-btn" href="#rules">नियम देखें →</a></article>
+  </div>
+</section>
+<section id="how" class="steps">
+  <h2 class="section-title">कैसे काम करता है?</h2><p class="sub">आसान और स्पष्ट प्रक्रिया</p>
+  <div class="grid">
+    <article class="card"><div class="number">1</div><h3>रजिस्ट्रेशन करें</h3><p>अपना नाम और संपर्क विवरण भरें। अभी कोई रजिस्ट्रेशन फीस नहीं है।</p></article>
+    <article class="card"><div class="number">2</div><h3>सर्विस चुनें</h3><p>Driving Licence या ITR Filing की जानकारी के लिए हमारी टीम से संपर्क करें।</p></article>
+    <article class="card"><div class="number">3</div><h3>ऑफर के नियम पढ़ें</h3><p>किसी भी प्रमोशनल ड्रॉ में भाग लेने से पहले लागू नियम और पात्रता जाँचें।</p></article>
+  </div>
+</section>
+<section id="register">
+  <h2 class="section-title">फ्री रजिस्ट्रेशन</h2><p class="sub">यह अभी शुरुआती डेमो फॉर्म है। सबमिट करने पर जानकारी केवल इस पेज पर दिखाई जाएगी; सर्वर पर सेव नहीं होगी।</p>
+  <div class="form-wrap">
+    <div class="notice"><strong>महत्वपूर्ण जानकारी</strong><br>• रजिस्ट्रेशन फीस: ₹0<br>• इस वेबसाइट पर भुगतान सुविधा चालू नहीं है।<br>• फॉर्म में आधार नंबर, PAN नंबर, पासवर्ड या बैंक विवरण न भरें।<br>• रजिस्ट्रेशन अपने-आप किसी ड्रॉ में पात्रता की गारंटी नहीं देता।</div>
+    <div class="form-card">
+      <form id="regForm">
+        <label for="name">पूरा नाम *</label><input id="name" name="name" required maxlength="80" placeholder="अपना नाम लिखें">
+        <label for="phone">मोबाइल नंबर *</label><input id="phone" name="phone" required inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" placeholder="10 अंकों का मोबाइल नंबर">
+        <label for="service">किस सर्विस की जानकारी चाहिए? *</label><select id="service" name="service" required><option value="">सर्विस चुनें</option><option>Driving Licence</option><option>ITR Filing</option><option>दोनों</option></select>
+        <label for="city">शहर (वैकल्पिक)</label><input id="city" name="city" maxlength="80" placeholder="अपना शहर">
+        <label><input type="checkbox" id="consent" required style="width:auto"> मैं सहमत हूँ कि मेरी दी गई जानकारी का उपयोग मुझसे संपर्क करने के लिए किया जा सकता है। *</label>
+        <button class="btn" type="submit">फ्री रजिस्ट्रेशन डेमो</button>
+        <div id="status" class="status" role="status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+<section id="rules">
+  <h2 class="section-title">ऑफर और नियम</h2><p class="sub">किसी भी लकी ड्रॉ या पुरस्कार योजना की घोषणा से पहले आयोजक को लागू कानून, अनुमति, पात्रता, पुरस्कार, चयन प्रक्रिया और नियमों की पुष्टि करनी होगी। जब तक यह पुष्टि न हो, यह पेज केवल सर्विस प्रचार और डेमो रजिस्ट्रेशन के लिए है।</p>
+</section>
+</main>
+<footer><div class="brand">🎉 MAHASAKTI LUCKY DRAW</div><p>Driving Licence सहायता • ITR Filing सहायता</p><p>संपर्क: <span id="contact">9575426665</span></p><p class="muted">यह डेमो वेबसाइट है। सरकारी विभाग की आधिकारिक वेबसाइट नहीं। सरकारी सेवाओं के लिए केवल अधिकृत प्रक्रिया और पोर्टल का उपयोग करें।</p><p class="muted">© <span id="year"></span> Mahasakti Lucky Draw</p></footer>
+<a class="wa" id="waLink" href="https://wa.me/919575426665" target="_blank" rel="noopener">WhatsApp संपर्क</a>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+function chooseService(s){document.getElementById('service').value=s}
+document.getElementById('regForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const name=document.getElementById('name').value.trim();
+ const phone=document.getElementById('phone').value.trim();
+ const service=document.getElementById('service').value;
+ if(!name||!service||! /^[6-9][0-9]{9}$/.test(phone)){document.getElementById('status').textContent='कृपया सही जानकारी भरें।';return;}
+ document.getElementById('status').textContent='धन्यवाद '+name+'! यह डेमो रजिस्ट्रेशन है; आपकी जानकारी सर्वर पर सेव नहीं हुई है। वास्तविक रजिस्ट्रेशन शुरू होने पर आपसे संपर्क किया जा सकेगा।';
+ this.reset();
+});
+</script>
+</body></html>
